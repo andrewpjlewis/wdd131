@@ -7,7 +7,10 @@
     <meta name="description" content="This site is a replicated BYUI mission statement for the class assignment">
     <meta name="author" content="Andrew Lewis">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src=""></script>
+    <select name="theme" id="dark">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
 </head>
 <body>
     <div class="content">
@@ -36,8 +39,9 @@
             </ol>
         </main>
         <footer>
-            <img src="images/logo.png" alt="BYUI logo" class="logo" />
+            <img src="images/logo.png" alt="BYUI logo" id="logo" />
         </footer>
     </div>
+    <script src="scripts/mission.js"></script>
 </body>
 </html>

@@ -31,3 +31,14 @@ img {
     margin: 0 auto;
     width: 150px;
 }
+
+
+body.dark {
+    background-color: #333;
+}
+.dark h2 {
+    color: #4F9ACF;
+}
+.dark h1, .dark p, .dark li {
+    color: white;
+}
