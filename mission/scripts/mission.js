@@ -9,6 +9,7 @@ function changeTheme() {
     } else {
         console.log("Setting light theme");
         document.body.classList.remove("dark");
+        imageElement.src = "images/logo.png";
     }
 }
 themeSelector.addEventListener("change", changeTheme)
