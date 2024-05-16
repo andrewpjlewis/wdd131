@@ -18,6 +18,9 @@ a:link,
 a:visited {
   color: white;
 }
+a {
+  text-decoration: none;
+}
 header {
   background-color: var(--primary-color);
   text-align: center;
@@ -25,9 +28,19 @@ header {
   color: white;
   padding: 0.5em;
 }
-nav {
-  display: grid;
-  justify-content: center;
+.menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+button[type="Menu"] {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 nav a {
   padding: 0.25em;
@@ -54,6 +67,36 @@ img {
   box-shadow: 0 4px 8px black;
   padding: 0.5em;
   margin: 0.5em;
+  align-self: center;
+  margin: auto;
+}
+.gallery {
+  display: inline-flex;
+  flex-direction: column;
+}
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+}
+.close-viewer {
+  grid-row: 1/2;
+  justify-self: right;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.viewer img {
+  grid-row: 2/3;
+  max-height: 100%;
 }
 footer {
   background-color: var(--primary-color);
@@ -66,9 +109,13 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-  nav {
+  .menu {
     display: flex;
+    flex-direction: row;
     gap: 10%;
+  }
+  button{
+    display: none;
   }
   .gallery {
     display: grid;
@@ -123,5 +170,26 @@ footer {
   .img9 {
     grid-column: 3/4;
     grid-row: 4/5;
+  }
+  .viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    padding: 2%;
+    margin: 2% 15%;
+  }
+  .close-viewer {
+    display: flex;
+    margin: 0;
+  }
+  .viewer img {
+    padding: 0;
+    margin-top: -.0025%;
+    max-height: 60%;
   }
 }
