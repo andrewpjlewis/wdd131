@@ -39,7 +39,7 @@ a:hover {
     font-family: "Montserrat", sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
     gap: 1em;
     padding: 1em;
 }
@@ -66,10 +66,12 @@ h2 {
 .details{
     grid-column: 1/2;
     text-align: right;
-    font-weight: bold;
 }
 .img {
     text-align: center;
+}
+.date {
+    font-size: 1.25em;
 }
 #filter {
     grid-column: 3/4;
