@@ -1,0 +1,112 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1.5fr;
+    gap: 1em;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.cardFront {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    background-color: #e1e1e1;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 5%; 
+}
+#total {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.5em;
+}
+.divNumber {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+#number {
+
+}
+#cardNumber {
+ font-size: 1em;
+}
+.divHolder {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+}
+#holder {
+
+}
+#cardHolder {
+    font-size: 1em;
+}
+.divExp {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.divMMYY {
+    display: flex;
+    gap: 1em;
+}
+#expiration {
+
+}
+#ExpMM {
+    font-size: 1em;
+}
+#ExpYY {
+    font-size: 1em;
+}
+img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.cardBack {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index: -1;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    padding: 2.5%;
+}
+.blackBar {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    max-height: 50%;
+    background-color: black;
+}
+.cvc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#cvcName {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#cvc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1em;
+}
+button {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-radius: .5em;
+}
+

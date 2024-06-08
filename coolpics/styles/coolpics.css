@@ -109,6 +109,10 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: ;
+  }
   .menu {
     display: flex;
     flex-direction: row;
