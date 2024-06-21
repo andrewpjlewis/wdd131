@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC";
+}
+
+body {
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+header img {
+    max-width: 30%;
+}
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5em;
+    align-items: end;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 1em;
+}
+input {
+    border-radius: .5em;
+    height: 2em;
+}
+button img {
+    border-radius: .5em;
+    max-width: 1.75em;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(190, 190, 190); /* Black color */
+    margin: 20px 0; /* Vertical spacing */
+}
+.recipe {
+    border: 2px solid black;
+    padding: 1.5em;
+    border-radius: .5em;
+}
+.recipe h2 {
+    color: var(--primary-color);
+}
+.tag{
+    border: 2px solid black;
+    padding: .25em 1em;
+    font-weight: bold;
+}
+.recipes img {
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+footer {
+    padding: 2em;
+    text-align: center;
+    
+}
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.social img {
+    max-width: 25%;
+}
+
+@media screen and (min-width: 900px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+    header img {
+        max-width: 15%;
+    }
+    input {
+        width: 95%;
+    }
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 2em;
+    }
+    .recipe-img {
+        grid-row: 1/6;
+    }
+    .tag {
+        grid-column: 2/3;
+    }
+    .recipe h2 {
+        grid-column: 2/3;
+    }
+    .recipe span {
+        grid-column: 2/3;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 0em;
+    }
+    #recipe-icons {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+    }
+    .social {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center;
+    }  
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        grid-gap: 55em;
+    }
+    
+}
