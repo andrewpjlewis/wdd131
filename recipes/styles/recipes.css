@@ -61,6 +61,9 @@ hr {
     border: 2px solid black;
     padding: .25em 1em;
     font-weight: bold;
+    list-style: none;
+    max-width: 3.5em;
+    margin-bottom: .25em;
 }
 .recipes img {
     max-width: 100%;
