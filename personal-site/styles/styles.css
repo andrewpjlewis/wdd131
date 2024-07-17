@@ -7,11 +7,14 @@ body {
 }
 
 nav {
-    background-color: #333;
+    position: relative;
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center; /* Center align items vertically */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: rgba(237, 237, 237, 0.25);
+    backdrop-filter: blur(5px);
 }
 
 .logo img {
@@ -43,21 +46,46 @@ nav {
 }
 
 .bar {
-    width: 25px;
+    width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 4px 0;
+    border-radius: 25px;
 }
 
-
-/* Position the menu on the right */
 .nav-list {
     position: absolute;
-    top: 60px; /* Adjust based on your preference */
+    top: 64px; /* Adjust based on your preference */
     right: 0px; /* Adjust based on your preference */
-    background-color: #333;
+    background-color: rgba(237, 237, 237, 0.25);
+    backdrop-filter: blur(5px);
     padding-right: 1rem;
-    border-radius: 5px;
     width: 100%;
     text-align: right;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero img{
+    margin-top: -75px;
+    z-index: 1;
+}
+
+.arrow-down {
+    margin-top: -100px;
+
+    z-index: 2;
+}
+
