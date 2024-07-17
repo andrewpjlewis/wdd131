@@ -32,11 +32,25 @@
         </div>
     </header>
     <main>
+        <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z"/></svg></button>
+                <button class="carousel-button next" data-carousel-button="next"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12z"/></svg></button>            
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/cat-blueeyes.png" alt="cat with blue eyes">
+                    </li>
+                    <li class="slide">
+                        <img src="images/cat-flowers.jpg" alt="cat in cat-flowers">
+                    </li>
+                    <li class="slide">
+                        <img src="images/cat-monochrome.jpg" alt="monochrome colored cat">
+                    </li>
+                </ul>
+            </div>
+        </section>
         <div class="gallery">
-            <img src="images/cat-blueeyes.png" alt="cat with blue eyes">
-            <img src="images/cat-flowers.jpg" alt="cat in cat-flowers">
-            <img src="images/cat-monochrome.jpg" alt="monochrome colored cat">
-            <img src="images/cat-relaxing.png" alt="cat relaxing">
+
         </div>
     </main>
     <footer>

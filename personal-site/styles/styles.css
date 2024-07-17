@@ -13,8 +13,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 5;
-    background-color: rgba(237, 237, 237, 0.25);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
@@ -57,17 +56,10 @@ nav {
     position: absolute;
     top: 64px; /* Adjust based on your preference */
     right: 0px; /* Adjust based on your preference */
-    background-color: rgba(237, 237, 237, 0.25);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
     padding-right: 1rem;
     width: 100%;
     text-align: right;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .hero {
@@ -86,7 +78,81 @@ main {
 
 .arrow-down {
     margin-top: -100px;
-
     z-index: 2;
+    cursor: pointer;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.carousel {
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 25%;
+    z-index: 2;
+    transform: translateY(-25%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
