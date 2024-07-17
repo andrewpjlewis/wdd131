@@ -34,14 +34,6 @@ buttons.forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const scrollIcon = document.querySelector('.arrow-down');
-    const toggleScrollIcon = () => {
-        if (window.scrollY === 0) {
-            scrollIcon.style.display = 'block';
-        } else {
-            scrollIcon.style.display = 'none';
-        }
-    };
     toggleScrollIcon();
     window.addEventListener('scroll', toggleScrollIcon);
     document.querySelector(".arrow-down").addEventListener('click', () => {
