@@ -1,12 +1,15 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const navList = document.querySelector('.nav-list');
+const photoGallery = document.getElementById('hero-h1');
 
 mobileMenu.addEventListener('click', () => {
     navList.classList.toggle('active');
     if (navList.classList.contains('active')) {
         navList.style.display = 'flex';
+        photoGallery.style.top = '24%';
     } else {
         navList.style.display = 'none';
+        photoGallery.style.top = '5.25%';
     }
 });
 
@@ -27,5 +30,23 @@ buttons.forEach(button => {
 
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
+    })
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollIcon = document.querySelector('.arrow-down');
+    const toggleScrollIcon = () => {
+        if (window.scrollY === 0) {
+            scrollIcon.style.display = 'block';
+        } else {
+            scrollIcon.style.display = 'none';
+        }
+    };
+    toggleScrollIcon();
+    window.addEventListener('scroll', toggleScrollIcon);
+    document.querySelector(".arrow-down").addEventListener('click', () => {
+        document.querySelector('.home-main').scrollIntoView({
+            behavior: 'smooth'
+        })
     })
 });
