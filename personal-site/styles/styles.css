@@ -113,11 +113,19 @@ main {
     align-items: center;
 }
 
+main h2 {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #A4A4A4;
+    border-radius: .5em;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 .carousel {
     width: 50vh;
-    height: 100vh;
+    height: 40vh;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 1.5em;
 }
 
 .carousel > ul {
@@ -151,9 +159,9 @@ main {
     background: none;
     border: none;
     font-size: 4rem;
-    top: 12.5%;
+    top: 27.5%;
     z-index: 2;
-    transform: translateY(-12.5%);
+    transform: translateY(-27.5%);
     color: rgba(255, 255, 255, .5);
     cursor: pointer;
     border-radius: .25rem;
@@ -176,4 +184,23 @@ main {
 
 .carousel-button.next {
     right: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.gallery img {
+    max-width: 60vh;
+    max-height: 50vh;
+    object-fit: cover;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
 }
