@@ -33,12 +33,8 @@ buttons.forEach(button => {
     })
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    toggleScrollIcon();
-    window.addEventListener('scroll', toggleScrollIcon);
     document.querySelector(".arrow-down").addEventListener('click', () => {
         document.querySelector('.home-main').scrollIntoView({
             behavior: 'smooth'
         })
     })
-});
