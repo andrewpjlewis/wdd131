@@ -79,8 +79,9 @@ main {
 }
 
 .hero img{
-    margin-top: -75px;
+    margin-top: -115px;
     z-index: 1;
+    width: 100%;
 }
 
 .arrow-down {
