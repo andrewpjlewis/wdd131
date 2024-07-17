@@ -33,7 +33,7 @@ nav {
 .nav-list a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 2em;
 }
 
 .menu-toggle {
@@ -49,17 +49,15 @@ nav {
     margin: 4px 0;
 }
 
-/* Show the menu when active */
-nav.active .nav-list {
-    display: flex;
-}
 
 /* Position the menu on the right */
 .nav-list {
     position: absolute;
-    top: 50px; /* Adjust based on your preference */
-    right: 10px; /* Adjust based on your preference */
+    top: 60px; /* Adjust based on your preference */
+    right: 0px; /* Adjust based on your preference */
     background-color: #333;
-    padding: 10px;
+    padding-right: 1rem;
     border-radius: 5px;
+    width: 100%;
+    text-align: right;
 }
