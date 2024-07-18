@@ -33,8 +33,11 @@ buttons.forEach(button => {
     })
 });
 
-    document.querySelector(".arrow-down").addEventListener('click', () => {
-        document.querySelector('.home-main').scrollIntoView({
-            behavior: 'smooth'
-        })
-    })
+document.querySelector(".arrow-down").addEventListener('click', () => {
+    document.querySelector('.home-main').scrollIntoView({
+    behavior: 'smooth'
+    });
+    document.querySelector('.about-main').scrollIntoView({
+        behavior: 'smooth'
+    });
+})
