@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Gallery</title>
-    <link rel="icon" sizes="32x32" href="images/logo.png">
+    <link rel="icon" sizes="32x32" href="images/logo.webp">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Explore the Andrew P J Lewis Gallery, showcasing a blend of music, technology, and photography. Discover captivating stories through stunning images from Wisconsin and beyond.">
+</head>
 </head>
 <body>
     <header class="about-header">
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Andrew P J Lewis Gallery logo"/>
+                    <img src="images/logo.webp" alt="Andrew P J Lewis Gallery logo"/>
                 </a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" tabindex="0" role="button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,27 +29,35 @@
         </nav>
         <div class="hero">
             <h1 id="hero-h1">About Andrew</h1>
-            <img src="images/hero.webp" alt="hero image" id="hero-mobile">
+            <img src="images/hero.webp" alt="hero image" id="hero-mobile" loading="lazy">
             <img src="images/hero-desktop.webp" alt="desktop hero image" id="hero-img">
         </div>
     </header>
     <main class="about-main">
-        <div class="about-text">
-            <h2>Header</h2>
+        <section class="about-text">
+            <h2>About Me</h2>
             <img src="images/saige&i.webp" alt="My wife and I">
             <p>Welcome to my corner of the web! I'm a passionate enthusiast hailing from the beautiful state of Wisconsin. My love for music, technology, and photography has been the driving force behind my creative journey. Growing up amidst the picturesque landscapes of Wisconsin, I developed a keen eye for capturing the beauty of everyday moments through my lens. Whether it's the serene lakes, vibrant fall foliage, or the bustling cityscapes, each click of my camera shutter tells a story. Music, my constant companion, adds a rhythm to my life, inspiring my creative processes and fueling my passion for innovation.</p>
             <p>Technology has always fascinated me, serving as a bridge to endless possibilities. From coding my first program to exploring the latest advancements in digital photography, I find immense joy in merging technology with creativity. This blend allows me to not only capture stunning images but also to present them in unique and interactive ways. My journey is all about exploring new horizons, pushing the boundaries of creativity, and sharing my perspective with the world. Thank you for joining me on this adventure, and I hope my work resonates with you as much as it does with me.</p>
-        </div>
-        <div class="about-img">
+        </section>
+        <section class="about-img" aria-label="Gallery of cat photos">
             <img src="images/cat-siamese.webp" alt="siamese cat">
             <img src="images/cat-nature.webp" alt="cat in nature">
             <img src="images/cat-relaxing.webp" alt="cat relaxing">
             <img src="images/cat-white.webp" alt="white cat">
-        </div>
+        </section>
     </main>
     <footer>
-        <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
-        <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg></a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/>
+            </svg>
+        </a>
         <p>&copy; 2024 - Andrew PJ Lewis</p>
     </footer>
     <script src="scripts/main.js"></script>

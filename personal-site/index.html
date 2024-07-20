@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew  Gallery</title>
-    <link rel="icon" sizes="32x32" href="images/logo.png">
+    <title>Andrew Gallery</title>
+    <link rel="icon" sizes="32x32" href="images/logo.webp">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Explore the Andrew P J Lewis Gallery, showcasing a blend of music, technology, and photography. Discover captivating stories through stunning images from Wisconsin and beyond.">
+</head>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Andrew P J Lewis Gallery logo"/>
+                    <img src="images/logo.webp" alt="Andrew P J Lewis Gallery logo"/>
                 </a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,7 +32,11 @@
             <img src="images/mountain-mobile.webp" alt="hero image" id="hero-mobile">
             <img src="images/mountain-desktop.webp" alt="desktop hero image" id="hero-img">
             <div class="arrow-down">
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2.45em" viewBox="0 0 512 512"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z" fill="#313131"/></svg></button>
+                <button aria-label="Scroll down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2.45em" viewBox="0 0 512 512">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z" fill="#313131"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -38,8 +44,16 @@
         <h2>Here are my most recent images</h2>
         <section aria-label="Newest Photos">
             <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev"><svg xmlns="http://www.w3.org/2000/svg" width=".5em" height=".5em" viewBox="0 0 24 24"><path fill="currentColor" d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z"/></svg></button>
-                <button class="carousel-button next" data-carousel-button="next"><svg xmlns="http://www.w3.org/2000/svg" width=".5em" height=".5em" viewBox="0 0 24 24"><path fill="currentColor" d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12z"/></svg></button>            
+                <button class="carousel-button prev" data-carousel-button="prev" aria-label="Previous slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width=".5em" height=".5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z"/>
+                    </svg>
+                </button>
+                <button class="carousel-button next" data-carousel-button="next" aria-label="Next slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width=".5em" height=".5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12z"/>
+                    </svg>
+                </button>            
                 <ul data-slides>
                     <li class="slide" data-active="">
                         <img src="images/cat-monochrome.webp" alt="monochrome colored cat">
@@ -61,8 +75,16 @@
         </div>
     </main>
     <footer>
-        <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
-        <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg></a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/>
+            </svg>
+        </a>
         <p>&copy; 2024 - Andrew PJ Lewis</p>
     </footer>
     <script src="scripts/main.js"></script>
